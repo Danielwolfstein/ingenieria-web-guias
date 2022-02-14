@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <canvas id="myCanvas" width="500" height="200" >
+        canvas 1
+    </canvas>
+
+    <canvas id="canvas2" width="1000" height="600" >
+        canvas 2
+    </canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF";
+        ctx.fillRect(20, 10, 150, 75);
+        var canva =document.getElementById("canvas2");
+        var ctz = canva.getContext("2d");
+        ctz.fillStyle ='#FF0000';
+        ctz.fillRect(30, 20, 300, 80);
+
+
+    </script>
+
+</body>
+</html>
